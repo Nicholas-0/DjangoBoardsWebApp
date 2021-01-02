@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+secrets.py
 
 
 # SQLite database files

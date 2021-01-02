@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'krp)tm9z8h%ehaz4d*7ct1zr+6m0sy7$5kney86qw)5p&ay#*h'
+SECRET_KEY=MY_SECRET_KEY  # whatever yours is
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     'widget_tweaks',
 
@@ -137,7 +138,7 @@ LOGIN_REDIRECT_URL = 'home'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'homingkin711@gmail.com'
+EMAIL_HOST_USER = 'john@doe.com'
 EMAIL_HOST_PASSWORD = 'abc'
 EMAIL_PORT = 587
 EMAIL_TLS = True
